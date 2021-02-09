@@ -1,0 +1,102 @@
+@charset "UTF-8";
+.contact {
+  margin: 0;
+  padding: 20px 6% 30px;
+  background: rgba(231, 151, 30, 0.1);
+  text-align: center;
+  /* お問い合わせ */
+}
+
+.contact .error {
+  color: red;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.contact .personal {
+  padding: 0 12%;
+}
+
+.contact .personal .a-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .personal .a-form .tag {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact .personal .a-form .mand {
+  border-radius: 10px;
+  background: #ec6464;
+  color: #efefef;
+  padding: 5px 10px;
+  margin-right: 25px;
+}
+
+.contact .personal .a-form .any {
+  background: #279fe4;
+}
+
+.contact .personal .a-form .textline {
+  width: 200px;
+}
+
+.contact .personal .policy {
+  display: inline-block;
+}
+
+.contact .personal .policy [type="checkbox"] {
+  margin-top: 3em;
+  margin-right: 5px;
+}
+
+.contact .personal .policy [type="checkbox"]:checked ~ .done {
+  color: rgba(17, 128, 104, 0.363);
+}
+
+.contact .personal .policy [type="checkbox"]:checked ~ .done a {
+  color: rgba(17, 128, 104, 0.363);
+}
+
+.contact .personal .policy label > a {
+  color: #d68f0a;
+}
+
+.contact .sent .output {
+  color: red;
+}
+
+.contact .sent ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contact .sent ul li {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.contact .sent ul li .math1 {
+  float: right;
+}
+
+.contact .sent ul li .math2 {
+  margin-right: 50px;
+}
+
+.contact .sent .sent2 {
+  border-radius: 30px;
+  background: #a3eca0;
+  padding: 15px 6% 30px;
+  width: 40%;
+  margin: 20px auto;
+}
+/*# sourceMappingURL=styles.css.map */

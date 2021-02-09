@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// ボデー
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  // font-style: italic;
+}
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+// メイン
+.hoge {
+  margin: 0;
+  padding: 20px 6% 30px;
+  background: rgba(199, 107, 33, 0.568);
+  text-align: center;
+  ul {
+    max-width: 40%;
+    margin: 10px auto;
+    text-align: left;
+    padding: 20px 5%;
+    padding-right: 0;
+    border-radius: 20px;
+    background: radial-gradient(rgba(236, 182, 5, 0.5), rgba(196, 50, 13, 1));
+  }
+}
+

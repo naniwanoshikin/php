@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+textarea {
+  width: 98%;
+  height: 60px;
+}
+.file-up {
+  margin-bottom: 10px;
+}
+.submit {
+  text-align: right;
+}
+.upfile {
+  width: 50%;
+  margin: 0 auto;
+}

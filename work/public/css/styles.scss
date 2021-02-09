@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+// リンクのホバー色
+@mixin acolor {
+  color: #fff;
+  &:hover {
+    color: rgb(78, 190, 235);
+  }
+}
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// ボデー
+body {
+  font-family: vardana, "Ariel Black", メイリオ, sans-serif;
+  color: #333;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: normal;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  // font-style: italic;
+  letter-spacing: 0.25em;
+}
+h2 {
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin: 40px 10% 30px;
+  border-bottom: 2px solid rgb(178, 223, 15);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+header {
+  background-color: #efefef;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+footer {
+  padding: 50px 0; //←autoだと適用されず
+  background: #353042;
+  color: #98969c;
+  text-align: center;
+  a {
+    display: block;
+    @include acolor;
+  }
+}
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// 戻るボタン
+.backbtn {
+  border-radius: 30px;
+  background: #6fc76c;
+  color: honeydew;
+  padding: 6px 3%;
+  margin: 10px auto;
+  display: inline-block;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+// 送信ボタン
+.orderbtn {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  input[type="submit"] {
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: #e0ce7a;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+// 投稿ボタン
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 18px;
+  background: #67c5ff;
+  border: 2px solid #67c5ff;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+// テキスト
+.textline {
+  padding: 10px;
+  border-radius: 8px;
+}
+// 日時
+.date {
+  text-align: right;
+  margin: 0 1.5rem;
+}
+// エラーメッセージ
+.error-msg {
+  margin-top: 3px;
+  color: red;
+}
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// ナビ
+nav {
+  // margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+  background-color: rgb(107, 107, 107);
+  & > ul {
+    margin-top: 0;
+    padding: 2px 20px;
+    display: flex;
+    justify-content: center; // 均等に配置
+    // 全Menu共通
+    li {
+      display: inline-block; // 一覧が横になる（MainMenuのみ）
+      margin-right: 5px;
+      &:hover > a {
+        color: orange;
+        transition: all 0.3s;
+      }
+      & > a {
+        color: #444; // 文字色
+        background: #efefef;
+        padding: 10px 20px;
+        display: block;
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+        border-radius: 4px;
+        // text-transform: uppercase; // 大文字
+        & > span {
+          margin-left: 0.5em; // ▼
+        }
+        &:hover {
+          background: #d6ecaa;
+          transition: all 0.3s;
+        }
+      }
+    }
+    // SubMenuのみ
+    & > li > ul {
+      position: absolute;
+      top: 42px; // 位置調整
+      // left: 20px;
+      display: none;
+      & > li {
+        display: block; // 一覧が縦になる
+      }
+    }
+    & > li:hover ul {
+      display: block; // 表示
+      transition: all 1s;
+
+    }
+  }
+}
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+/* 顔 */
+.about {
+  background: #e0ce7a;
+  height: 240px;
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+  .about-img {
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+    box-shadow: 0 7px #575639;
+    &:active {
+      box-shadow: none;
+      box-shadow: 0 2px #575639;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+/* レスポンシブ機能 */
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+/* medium screen */
+@media (min-width: 650px) {
+  .contact {
+    form {
+      ul {
+        display: flex;
+        flex-flow: row wrap; // はみ出した分は折り返し
+        justify-content: space-between; // 等間隔
+        li {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+/* large screen */
+@media (min-width: 1260px) {
+  .contact {
+    form {
+      ul {
+        li {
+          width: 24%;
+        }
+      }
+    }
+  }
+}

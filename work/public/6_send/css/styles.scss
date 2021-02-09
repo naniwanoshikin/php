@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+// 連絡先＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.contact {
+  margin: 0;
+  padding: 20px 6% 30px;
+  background: rgba(231, 151, 30, 0.1);
+  text-align: center;
+  // 入力エラーメッセージ
+  .error {
+    color: red;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+  }
+  /* お問い合わせ */
+  .personal {
+    // 連絡先
+    padding: 0 12%;
+    // 入力欄
+    .a-form {
+      display: flex;
+      margin-top: 2.5em;
+      justify-content: space-between;
+      // 項目名
+      .tag {
+        margin: 0;
+        font-size: 18px;
+      }
+      // 必須
+      .mand {
+        border-radius: 10px;
+        background: rgb(236, 100, 100);
+        color: #efefef;
+        padding: 5px 10px;
+        margin-right: 25px;
+      }
+      // 任意
+      .any {
+        background: #279fe4;
+      }
+      // テキスト
+      .textline {
+        width: 200px;
+      }
+    }
+    // プライバシーポリシー
+    .policy {
+      display: inline-block;
+      // ポリシー
+      [type="checkbox"] {
+        margin-top: 3em;
+        margin-right: 5px;
+        // チェック時
+        &:checked ~ .done {
+          color: rgba(17, 128, 104, 0.363);
+          a {
+            color: rgba(17, 128, 104, 0.363);
+          }
+        }
+      }
+      label > a {
+        color: rgb(214, 143, 10);
+      }
+    }
+  }
+
+  // 送信後
+  .sent {
+    .output {
+      // 入力情報
+      color: red;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        text-align: left;
+        padding-bottom: 10px;
+        .math1 {
+          float: right;
+        }
+        .math2 {
+          // 個数
+          margin-right: 50px;
+        }
+      }
+    }
+    .sent2 {
+      // 個人情報
+      border-radius: 30px;
+      background: #a3eca0;
+      padding: 15px 6% 30px;
+      width: 40%;
+      margin: 20px auto;
+    }
+  }
+}

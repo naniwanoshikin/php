@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+body main {
+  width: 220px;
+  margin: 32px auto;
+}
+
+body main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main header h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+body main header .purge {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+body main input[type="text"] {
+  width: 100%;
+  padding: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+body main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body main ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+body main ul li input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+body main ul li .done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+body main ul li .delete {
+  color: #ccc;
+  cursor: pointer;
+}
+
+body main ul li .delete-form {
+  margin-left: auto;
+  margin-right: 10px;
+  padding-left: 8px;
+}
+/*# sourceMappingURL=styles.css.map */

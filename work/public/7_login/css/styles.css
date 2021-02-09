@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 230px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
+form p {
+  margin: 5px auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 90%;
+  padding: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2px;
+  border-radius: 10px;
+}
+
+form input[type="submit"] {
+  margin: 15px auto;
+}
+
+.err {
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */
